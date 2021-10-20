@@ -52,6 +52,7 @@ namespace test1
         public string gnt { get; set; }
     }
 
+
     public class JsonModel
     {
         public List<V> v { get; set; }
@@ -87,7 +88,7 @@ namespace test1
                 DateTime Tested = DateTime.Parse(t[0].Sc);
                 int Days = DateTime.Now.Subtract(Tested).Days;
                 string TestResult = t[0].Tr;
-                if (Days > 3)
+                if (Days > 3 && TestResult.Equals("260415000"))
                 {
                     return true;
                 }
