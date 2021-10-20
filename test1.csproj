@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Vrt.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="PeterO.Cbor" Version="4.4.4" />
     <PackageReference Include="SharpZipLib" Version="1.3.1" />
   </ItemGroup>
